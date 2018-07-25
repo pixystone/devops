@@ -1,0 +1,24 @@
+[core]
+    editor = vim
+    autocrlf = input
+[merge]
+    tool = vimdiff
+[alias]
+    ss = status --short
+    s = status
+    co = checkout
+    a = add
+    au = add -u
+    c = commit
+    cm = commit -m
+    ll = log --color --graph --stat --all --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
+    l = log --color --graph --all --pretty=format:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%ci) %C(bold blue)<%an>%Creset'
+    la = log --color --graph --stat --decorate --all
+[diff]
+    color = auto
+    status = auto
+[user]
+    name = Pixy Yuan
+    email = pixy.bupt@gmail.com
+[push]
+    default = simple
