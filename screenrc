@@ -1,0 +1,14 @@
+#hardstatus alwayslastline
+#hardstatus string "%-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<"
+#hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} %H %{..Y} %Y/%m/%d %c:%s "
+#hardstatus string "%{.bW}%-w%{.rY}%n %t%{-}%+w %=%{..G} "
+#hardstatus string "%{= kB}%-w%{.bG}%n %t%{-}%+w %=%{= kG} %H %{..Y} %Y/%m/%d %c:%s"
+#hardstatus string "%{= kB}%-w%{.bG}%n %t%{-}%+w %=%{= kG} "
+#caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %0c %{g}%H%{-}"
+#caption always '%{= kG}[ %{G}%H %{g}][%= %{= kw}%?%-Lw%?%{r}(%{W}%n*%f%t%?(%u)%?%{r})%{w}%?%+Lw%?%?%= %{g}][%{B} %m-%d %{W} %c %{g}]'
+caption always "%{= kw}%-w%{= kG}%{+b}[%n %t]%{-b}%{= kw}%+w %=%d %M %{g}%H%{-}"
+shelltitle "$ | bash"
+#term screen-256color # 使用256色
+#attrcolor b ".I"    # 允许加粗色彩--由于某些原因是必须的
+#termcapinfo xterm 'Co#256:AB=\E[48;5;%dm:AF=\E[38;5;%dm'   # 告诉screen如何设置颜色。AB 指背景，AF 指前景
+defbce on    # 使用当前背景色来显示删除的字符

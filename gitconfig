@@ -1,5 +1,6 @@
 [core]
     editor = vim
+    excludefile = ~/.gitignore_global
     autocrlf = input
 [merge]
     tool = vimdiff

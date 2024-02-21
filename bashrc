@@ -1,7 +1,7 @@
 # .bashrc
 
 # User specific aliases and functions
-
+alias grep='grep --color=auto'
 alias rm='rm -i'
 alias cp='cp -i'
 alias mv='mv -i'
@@ -22,7 +22,7 @@ alias ll='ls -lh'
 alias lla='ls -alh'
 alias lu='du -sh ./*'
 alias du='du -sh'
-alias sed='gsed'
+#alias sed='gsed'
 alias lt='ls -t . | head -n 1'
 alias vt="vim `ls -t . | head -n 1`"
 
